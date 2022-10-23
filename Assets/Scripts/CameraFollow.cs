@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteAlways]
 public class CameraFollow : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private PlayerController player;
+    [SerializeField] private float armZ;
 
-    // Update is called once per frame
-    void Update()
+    private void LateUpdate() 
     {
-        
-    }
+        Vector3 currentPosition = transform.position;
+        Vector3 targetPosition = player.transform.position;
+
+        currentPosition.z = targetPosition.z + armZ;
+        transform.position = currentPosition;
+    } 
 }
