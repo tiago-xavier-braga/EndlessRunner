@@ -349,7 +349,9 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/PlayerAnimationController.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Stylized Astronaut/Character/Player.cs"
 -langversion:9.0
 
 /deterministic
